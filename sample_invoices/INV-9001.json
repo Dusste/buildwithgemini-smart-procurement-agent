@@ -1,0 +1,19 @@
+{
+  "invoice_number": "INV-9001",
+  "invoice_date": "2026-10-18",
+  "vendor_name": "Acme Office Supplies",
+  "po_number": "PO-1001",
+  "payment_terms": "Net 30",
+  "line_items": [
+    {
+      "item_id": "ITEM-CHAIR-01",
+      "description": "Ergonomic Mesh Office Chair",
+      "quantity": 10,
+      "unit_price": 150.0,
+      "line_total": 1500.0
+    }
+  ],
+  "subtotal": 1500.0,
+  "tax": 0.0,
+  "grand_total": 1500.0
+}

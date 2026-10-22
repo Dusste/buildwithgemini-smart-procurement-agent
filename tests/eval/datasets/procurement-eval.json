@@ -1,0 +1,43 @@
+{
+  "eval_cases": [
+    {
+      "eval_case_id": "audit_matching_invoice",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Perform a 3-way match on invoice INV-9001."}]
+      },
+      "reference": {
+        "response": {
+          "role": "model",
+          "parts": [{"text": "INV-9001 is 100% MATCHED and payment draft has been staged in ERP."}]
+        }
+      }
+    },
+    {
+      "eval_case_id": "audit_quantity_discrepancy",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Audit invoice INV-9002 and report any variances."}]
+      },
+      "reference": {
+        "response": {
+          "role": "model",
+          "parts": [{"text": "INV-9002 has a QUANTITY MISMATCH (billed 5 vs received 4) and has been flagged for procurement review."}]
+        }
+      }
+    },
+    {
+      "eval_case_id": "audit_price_discrepancy",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Audit invoice INV-9003 and report any variances."}]
+      },
+      "reference": {
+        "response": {
+          "role": "model",
+          "parts": [{"text": "INV-9003 has a PRICE MISMATCH (billed $95 vs PO $80) and has been flagged for human review."}]
+        }
+      }
+    }
+  ]
+}

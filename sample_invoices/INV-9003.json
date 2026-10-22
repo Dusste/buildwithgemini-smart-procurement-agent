@@ -1,0 +1,19 @@
+{
+  "invoice_number": "INV-9003",
+  "invoice_date": "2026-10-20",
+  "vendor_name": "Global Hardware Ltd",
+  "po_number": "PO-1003",
+  "payment_terms": "Net 30",
+  "line_items": [
+    {
+      "item_id": "ITEM-KB-MECH",
+      "description": "Tactile Mechanical Keyboard",
+      "quantity": 20,
+      "unit_price": 95.0,
+      "line_total": 1900.0
+    }
+  ],
+  "subtotal": 1900.0,
+  "tax": 0.0,
+  "grand_total": 1900.0
+}
